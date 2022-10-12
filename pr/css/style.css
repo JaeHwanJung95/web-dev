@@ -169,5 +169,76 @@ body {
     .buttons button a {
         font-size: 16px;
     }
+}
 
+/* 객실 보기 */
+#browsing {
+    width: 100%;
+}
+
+.title-text {
+    width: 45%;
+    margin: 80px auto 20px auto;
+    text-align: center;
+}
+
+.title-text h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.title-text p {
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.guestrooms {
+    width: 60%;
+    margin: 40px auto;
+}
+
+.room {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: beige;
+    padding: 20px;
+}
+
+.room-img {
+    flex-basis: 50%;
+}
+
+.room-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.room-desc {
+    flex-basis: 50%;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.room-desc h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.room-desc p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.room-desc button {
+    font-size: 18px;
+    font-weight: bold;
+    border: 0;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 34px;
+    cursor: pointer;
 }
