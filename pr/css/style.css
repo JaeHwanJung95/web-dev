@@ -376,3 +376,55 @@ body {
         font-size: 14px;
     }
 }
+
+/* 여가 시간 즐기기 */
+#travel {
+    width: 100%;
+}
+
+.travel-list {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.travel-card {
+    flex-basis: 33%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.travel-card a {
+    text-decoration: none;
+    color: #222;
+}
+
+.travel-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.travel-card p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+    .travel-list {
+        width: 100%;
+    }
+
+    .travel-card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .travel-card p {
+        font-size: 14px;
+    }
+}
