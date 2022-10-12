@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다양한 input 요소</title>
+  <style>
+    #container {
+      width:500px;
+      margin:20px auto;
+      padding:10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <form>
+      <ul>
+        <li>
+          <label for="searchBox">검색</label>
+          <input type="search" id="searchBox">
+        </li>
+        <li>
+          <label for="user-email">메일 주소</label>
+          <input type="email" id="user-email">
+        </li>
+        <li>
+          <label for="user-phone">연락처</label>
+          <input type="tel" id="user-phone">
+        </li>
+        <li>
+          <label for="favColor">선호하는 색상</label>
+          <input type="color" value="#ff0000">
+        </li>
+        <li>
+          <label for="prod-num">구매 갯수</label>
+          <input type="number" id="prod-num" min="1" max="100" step="1">
+        </li>        
+        <li>
+          <label for="volume">소리 조절</label>
+          <input type="range" id="volume" min="0" max="100" step="1">
+        </li>    
+        <li>
+          <label for="delivery">배송 예약</label>
+          <input type="datetime-local" id="delivery">
+        </li>
+        <li>
+          <label for="memo">메모</label>
+          <textarea id="memo" cols="40" rows="5" placeholder="그 외 주문사항이 있다면 남겨주세요."></textarea>
+        </li>     
+        <li>
+          <label for="birth-month"></label>
+          <select id="birth-month" size="6">
+            <option disabled selected>월</option>
+            <option value="m1">1월</option>
+            <option value="m2">2월</option>
+            <option value="m3">3월</option>
+            <option value="m4">4월</option>
+            <option value="m5">5월</option>
+          </select>
+          <label for="birth-date"></label>
+          <select id="birth-date" size="6" multiple>
+            <option disabled selected>일</option>
+            <option value="d1">1일</option>
+            <option value="d2">2일</option>
+            <option value="d3">3일</option>
+            <option value="d4">4일</option>
+            <option value="d5">5일</option>
+          </select>          
+        </li>              
+      </ul>
+    </form>
+  </div>
+</body>
+</html>

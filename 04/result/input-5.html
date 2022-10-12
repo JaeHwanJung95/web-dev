@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다양한 input 요소</title>
+  <style>
+    #container {
+      width:500px;
+      margin:20px auto;
+      padding:10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <form>
+      <ul>
+        <li>
+          <label for="searchBox">검색</label>
+          <input type="search" id="searchBox">
+        </li>
+        <li>
+          <label for="user-email">메일 주소</label>
+          <input type="email" id="user-email">
+        </li>
+        <li>
+          <label for="user-phone">연락처</label>
+          <input type="tel" id="user-phone">
+        </li>
+        <li>
+          <label for="favColor">선호하는 색상</label>
+          <input type="color" value="#ff0000">
+        </li>
+        <li>
+          <label for="prod-num">구매 갯수</label>
+          <input type="number" id="prod-num" min="1" max="100" step="1">
+        </li>        
+        <li>
+          <label for="volume">소리 조절</label>
+          <input type="range" id="volume" min="0" max="100" step="1">
+        </li>                
+      </ul>
+    </form>
+  </div>
+</body>
+</html>

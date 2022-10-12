@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>텍스트 스타일</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+    #container{
+      width:600px;
+      padding:15px;
+    }
+    h1 {
+      font-family:'Exo', sans-serif;
+      font-size:70px;
+      text-align: center;
+    }
+    .shadow1 {
+      color:red;
+      text-shadow: 1px 1px #000;
+    }
+    .shadow2 {
+      text-shadow: 5px 5px 3px #ffa500;
+    }
+    .shadow3 {
+      color:#fff;
+      text-shadow: 7px -7px 20px #000;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1 class="shadow1">SHADOW</h1>    
+    <h1 class="shadow2">SHADOW</h1>    
+    <h1 class="shadow3">SHADOW</h1>
+  </div>
+</body>
+</html>

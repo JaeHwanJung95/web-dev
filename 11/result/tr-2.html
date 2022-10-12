@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition</title>
+	<style>
+    .box {
+      margin:20px auto;
+      width: 100px;
+      height: 100px;
+      background-color: #07f;
+      border: 1px solid #222;
+      transition-property: all;  /* width, height라고 지정해도 됨 */
+      transition-duration: 2s;  /* 트랜지션 시간 - 2초 */
+    }
+    .box:hover {
+      width:200px;
+      height:120px;		
+      background-color:orange;
+    }
+	</style>
+</head>
+
+<body>
+	<div class="box"></div>	
+</body>
+</html>

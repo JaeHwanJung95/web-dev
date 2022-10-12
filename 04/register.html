@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>회원 가입</title>
+    <style>
+      #container {
+        width:600px;
+        margin:10px auto;
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="container">
+      <h2>회원 가입을 환영합니다</h2>
+      <form>
+        <fieldset>
+          <legend>사용자 정보</legend>
+          <ul>
+            <li>
+              <label for="class">회원 등급</label>
+              <input type="text" id="class" value="일반 회원" readonly>
+            </li>
+            <li>
+              <label for="user-id">아이디</label>
+              <input type="text" id="user-id" autofocus placeholder="4자~10자 사이, 공백없이" required>
+            </li>
+            <li>
+              <label for="user-email">이메일</label>
+              <input type="email" id="user-email" required>
+            </li>
+            <li>
+              <label for="user-pwd1">비밀번호</label>
+              <input type="password" id="user-pwd1" placeholder="문자와 숫자, 특수 기호 포함" required >
+            </li>
+            <li>
+              <label for="user-pwd2">비밀번호 확인</label>
+              <input type="search" id="user-pwd2" required >
+            </li>
+            <li>
+              <label for="user-phone">연락처</label>
+              <input type="tel" id="user-phone" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <h3>개인 정보</h3>
+          <ul>
+            <li>
+              <label for="birth">생년월일</label>
+              <input type="date" id="birth">
+            </li>
+            <li>
+              <label for="meeting">연락 가능 시간</label>
+              <input type="datetime-local" id="meeting">
+            </li>
+            <li>
+              <label for="path">가입 경로</label>
+              <select id="path">
+                <option value="blog">블로그</option>
+                <option value="search">검색</option>
+                <option value="sns">sns</option>
+                <option value="etc">기타</option>
+              </select>
+            </li>
+          </ul>
+
+          <h3>관심 분야</h3>
+          <input type="checkbox" name="subject" id="HTML" value="HTML" checked>
+          <label for="HTML">HTML</label>
+          <input type="checkbox" name="subject" id="CSS" value="CSS">
+          <label for="CSS">CSS</label>
+          <input type="checkbox" name="subject" id="Javascript" value="Javascript">
+          <label for="Javascript">Javascript</label>
+
+          <h3>뉴스 수신 여부</h3>
+          <input type="radio" name="mailing" id="yes" value="yes" checked>
+          <label for="yes">메일 수신</label>
+          <input type="radio" name="mailing" id="no" value="no">
+          <label for="no">메일 수신 안 함</label>
+
+          <h3>메모</h3>
+          <label>
+            <textarea id="user-input" cols="40" rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea>
+          </label>
+        </fieldset>
+        <button type="submit">가입하기</button>
+        <button type="reset">취소</button>
+    </form>
+    </div>           
+  </body>
+</html>

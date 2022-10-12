@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 소개 페이지</title>
+  <style>
+    .box {
+      width: 400px;
+      height: 200px;
+      margin: 20px; 
+      border: 2px solid #ccc;
+      float: left;
+      font-size: 20px;
+      text-align: center;
+      line-height: 200px;
+      background: url('images/bg-5.jpg') no-repeat left center;
+    }
+    .size-1 {
+      background-size: auto;
+    }
+    .size-2 {
+      background-size: 50% 50%;
+    }
+    .size-3 {
+      background-size: 70%;
+    }
+    .size-4 {
+      background-size: 200px;
+    }
+    .size-5 {
+      background-size: contain;
+    }
+    .size-6 {
+      background-size: cover;
+    } 
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box size-1">auto</div>
+    <div class="box size-2">50% 50%</div>
+    <div class="box size-3">70%</div>
+    <div class="box size-4">200px</div>
+    <div class="box size-5">contain</div>
+    <div class="box size-6">cover</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>도형 그리기</title>
+  <style>
+    * {
+      margin:0;
+      padding:0;
+    }    
+    body {
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+    }
+    div {
+      margin: 30px;
+    }
+    .square {
+      width: 100px;
+      height: 100px;
+      background: #b8005c;
+    }
+    .circle {
+      width: 100px;
+      height: 100px;
+      background: #b8005c;
+      border-radius: 50%;
+    }   
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid #b8005c;
+    }
+    .parallel {
+      width: 100px;
+      height: 100px;
+      transform: skew(15deg);
+      background: #b8005c;
+    }
+    .diamond {
+      width: 100px;
+      height: 100px;
+      transform: rotate(45deg);
+      background: #b8005c;
+    }
+  </style>
+</head>
+<body>
+  <div class="square"></div>
+  <div class="circle"></div>
+  <div class="triangle"></div>
+  <div class="parallel"></div>
+  <div class="diamond"></div>
+</body>
+</html>

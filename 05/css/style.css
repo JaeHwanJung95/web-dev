@@ -1,0 +1,16 @@
+h1 {
+  background-color:#222;
+  color:white;
+  padding:10px;
+}
+
+p {
+  font-size: 20px;
+  color : orange;
+}
+
+.accent {
+  color: red;
+  font-size:24px;
+  font-weight: bold;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>회원 가입</title>
+    <style>
+      #container {
+        width:600px;
+        margin:10px auto;
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="container">
+      <h2>회원 가입을 환영합니다</h2>
+      <form>        
+        <fieldset>
+          <legend>사용자 정보</legend>
+          <ul>
+            <li>
+              <label for="level">회원 등급</label>
+              <input type="text" value="일반 회원" readonly>
+            </li>
+            <li>
+              <label for="user-id">아이디</label>
+              <input type="text" id="user-id"  autofocus placeholder="4자 ~ 10자 사이, 공백없이" required> 
+            </li>
+            <li>
+              <label for="user-email">이메일</label>
+              <input type="email" id="user-email" required> 
+            </li>
+            <li>
+              <label for="pwd1">비밀번호</label>
+              <input type="password" id="pwd1" placeholder="문자와 숫자, 특수 기호 포함" required> 
+            </li> 
+            <li>
+              <label for="pwd2">비밀번호 확인</label>
+              <input type="password" id="pwd2" required> 
+            </li>
+            <li>
+              <label for="phone">연락처</label>
+              <input type="tel" id="phone" required> 
+            </li>           
+            <li>
+              <label for="charcter">프로필 사진</label>
+              <input type="file" id="charcter">
+            </li>                  
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <h3>개인 정보</h3>
+          <ul>
+            <li>
+              <label for="birth">생년월일</label>
+              <input type="date" id="birth">
+            </li> 
+            <li>
+              <label for="meeting">연락 가능 시간</label>
+              <input type="datetime-local" id="meeting">
+            </li>    
+          </ul>
+
+          <h3>관심 분야</h3>
+          <label>
+            <input type="checkbox" value="html" name="subject">HTML
+          </label>
+          <label>
+            <input type="checkbox" value="css" name="subject">CSS
+          </label>
+          <label>
+            <input type="checkbox" value="javascript" name="subject">Javascript
+          </label>
+
+          <h3>뉴스 수신 여부</h3>          
+          <label>
+            <input type="radio" value="yes" name="mailing">메일 수신
+          </label>          
+          <label>
+            <input type="radio" value="no" name="mailing">메일 수신 안 함
+          </label>  
+        </fieldset>       
+        
+        <div id="buttons">
+          <input type="submit" value="가입하기">
+          <input type="reset" value="취소">
+        </div>    
+      </form>
+    </div>           
+  </body>
+</html>

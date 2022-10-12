@@ -1,0 +1,11 @@
+body {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+    background-color: #ccc;
+    color: #222;
+}

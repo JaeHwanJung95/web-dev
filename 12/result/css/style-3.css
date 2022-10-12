@@ -1,0 +1,53 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  background:#0964a0;
+}      
+
+/* 모바일용 레이아웃 */
+
+#container {
+  width:320px;        
+  margin:50px auto;
+}
+.card {
+  position:relative;    
+  width:300px;
+  height:500px;
+  margin:20px 10px;
+  border:1px solid rgba(15, 15, 15, 0.2);
+  background-color:#fff;      
+}
+.words {
+  position:absolute;    
+  left:10px;
+  top:300px;
+  padding:10px;
+  text-align:center;   
+}
+
+/* 태블릿용 레이아웃 */
+@media screen and (min-width:768px) and (max-width:1439px) {
+  #container {
+      width:570px;        
+      margin:50px auto;
+  }
+  .card {
+      position:relative;    
+      width:550px;
+      height:250px;
+      margin:20px 10px;
+      border:1px solid rgba(15, 15, 15, 0.2);
+      background-color:#fff;      
+  }
+  .words {
+      position:absolute;    
+      left:310px;
+      top:50px;
+      text-align:center;
+      width:200px;          
+  }
+}

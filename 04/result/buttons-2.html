@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다양한 input 요소</title>
+  <style>
+    #container {
+      width:500px;
+      margin:20px auto;
+      padding:10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <form>
+      <fieldset>
+        <legend>신청 과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요. (1과목만 가능)</p>       
+        <input type="radio" name="subject" id="speaking" value="speaking">
+        <label for="speaking">회화</label>      
+        <input type="radio" name="subject" id="grammar" value="grammar">
+        <label for="grammar">문법</label>      
+        <input type="radio" name="subject" id="writing" value="writing">
+        <label for="writing">작문</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>뉴스 메일링</legend>
+        <p>메일로 받고 싶은 주제를 선택해 주세요. (복수 선택 가능)</p>
+        <input type="checkbox" name="mailing" id="news" value="news">
+        <label for="news">해외 단신</label>      
+        <input type="checkbox" name="mailing" id="5min" value="5min">
+        <label for="5min">5분 회화</label>  
+        <input type="checkbox" name="mailing" id="movie" value="movie">
+        <label for="movie">영화로 배우는 회화</label>     
+      </fieldset>
+
+      <fieldset> 
+        <label for="profile">프로필 사진</label>
+        <input type="file" id="profile">
+      </fieldset>
+            
+      <input type="submit" value="제출">
+      <input type="reset" value="취소">
+    </form>
+  </div>
+</body>
+</html>

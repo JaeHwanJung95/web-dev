@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation</title>
+	<style>
+    #container{
+      width:500px;
+      margin:20px auto;
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      float:left;
+      margin:50px;
+    }
+    #box1 {
+      background-color: #4cff00;
+      border: 1px solid transparent;
+      animation: changeColor 1s infinite, translate 3s alternate infinite;  /* 애니메이션 지정 */       
+    }
+
+    @keyframes changeColor { 
+      0% {
+        background-color: #4cff00;  
+      }
+      50% {
+        background-color: #17bdff;
+      }
+      100% {
+        background-color: #ff6a00;
+      }
+    }
+
+    @keyframes translate {  
+      from {
+        transform:translateX(0)  
+      }
+      to {
+        transform: translate(400px);  
+      }
+    }		
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div class="box" id="box1"></div>
+	</div>
+</body>
+</html>

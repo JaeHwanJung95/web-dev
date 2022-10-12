@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Noto+Sans+KR:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+#banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+  cursor: pointer;
+  color: white;
+}
+.logo img {
+  width: 100%;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {  
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+}
+.navbar ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff501b;
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.heading {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  text-align: center;
+  color: #fff;
+}
+.heading h2 {
+  font-family: 'Allura', cursive;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-size: 92px;
+  text-shadow: 1px 1px 2px #222;
+}
+.heading p {
+  margin: 40px auto;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 36px;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 25px;
+  border: 1px solid rgb(211, 211, 211);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+button > span {
+  background: #ff501b;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 120%;
+}
+button:hover {
+  border: none;
+}
+
+@media screen and (max-width: 769px) {
+  .navbar {
+    width: 100%;
+  }
+  .logo {
+    width: 60px;
+  }
+  .navbar ul li {  
+    margin: 0 6px;
+  }
+  .navbar ul li a {
+    font-size: 14px;
+  }
+  .heading h2 {
+    font-family: 'Allura', cursive;
+    font-size: 62px;
+  }
+  .heading p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button{
+    font-size: 14px;
+  }
+}
+
+/* 객실 보기 */
+#browsing {
+  width: 100%;
+}
+.title-text {
+  width: 90%;
+  margin: 80px auto 0 auto;
+  text-align: center;
+}
+.title-text h2 {
+  font-size: 58px;
+  color: #666;
+  margin-bottom: 20px;
+
+}
+
+.title-text p {
+  width: 40%;
+  margin: 20px auto;
+  font-size: 16px;
+  color: #aaa;
+}
+.guestrooms {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+}
+.room {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: beige;
+}
+.room-img {
+  flex-basis: 50%;
+}
+.room-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.room-desc {
+  flex-basis: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.room-desc h3 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.room-desc p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.room-desc .more {
+  padding: 10px 20px;
+  background-color:rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 5px;
+  color: #1f1f1f;
+}
+@media screen and (max-width: 769px) {
+  .title-text h2 {
+    font-size: 32px;
+  }
+  .title-text p {
+    font-size: 13px;
+  }
+  .guestrooms {
+    width: 100%;
+  }
+  .room-img {
+    flex-basis: 100%;
+  }
+  .room-img img {
+    width: 100%;
+  }
+  .room-desc {
+    flex-basis: 100%;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .room-desc h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .room-desc p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .room-desc .more {
+    font-size: 14px;
+  }
+}
+
+/* 호텔 시설 */
+#facilities {
+  width: 100%;
+}
+.around-places {
+  width: 80%;
+  margin: 40px auto;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+}
+.place {
+  flex-basis: 48%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.place img {
+  width: 100%;
+  border-radius: 7px;
+}
+.over {
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #fc7d16);
+  opacity: 0;
+  transition: 1s;
+}
+.place-desc {
+  color: #fff;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+.place-desc h3 {
+  font-size: 30px;
+}
+.place-desc hr {
+  width: 60%;
+  margin: 15px auto;
+}
+.place-desc p {
+  font-size: 16px;
+}
+.place:hover .over {
+  opacity: 1;
+}
+.place:hover .place-desc {
+  opacity: 1;
+  bottom: 30%;
+}
+@media screen and (max-width: 769px) {
+  .around-places {
+    width: 100%;
+  }
+  .place {
+    flex-basis: 80%;
+  }
+  .place-desc h3 {
+    font-size: 18px;
+  }
+  .place-desc p {
+    font-size: 12px;
+  }
+}
+
+/* 여가 시간 */
+#travel {
+  width: 100%;
+}
+.travel-list {
+  width: 80%;
+  margin: 40px auto;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.travel-card {
+  flex-basis: 33%;
+  text-align: center;
+}
+.travel-card img {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 50%;
+  border: 0.3px solid #eee;
+}
+.travel-card p {
+  font-size: 16px;
+}
+@media screen and (max-width: 769px) {
+  .travel-list {
+    width: 100%;
+  }
+  .travel-card {
+    flex-basis: 33%;
+    margin-bottom: 20px;
+  }
+  .travel-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+/* 푸터 */
+footer {
+  width: 80%;
+  padding: 30px;  
+  margin: 20px auto;
+  background-color: #eee;
+}
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact p {
+  font-size: 20px;
+  line-height: 2;
+}
+.contact i {
+  color: orangered;
+  margin-right: 15px;
+}
+.sns {
+  text-align: center;
+}
+.sns i {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  color: #666;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.sns i:hover {
+  background-color: #666;
+  color: #fff;  
+}
+.copyright {
+  width:100%;
+  margin-top: 40px;
+  color: #aaa;
+  text-align: center;
+  font-style: italic;
+}
+@media screen and (max-width: 769px) {
+  footer {
+    width: 100%;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact p {
+    font-size: 14px;
+    line-height: 2;
+  }
+  .sns i {
+    margin-top: 20px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+
+.fixed {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+}
+.fixed i {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #666;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+}

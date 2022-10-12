@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>불릿 대신 배경 이미지 사용하기</title>
+  <style>
+    ul {
+      list-style:none;   /* 불릿 없앰 */
+    }
+
+    li {
+      background-image:url('images/book-icon.png');  /* 배경 이미지 파일 */
+      background-repeat:no-repeat;  /* 배경 이미지 반복 안함 */
+      background-position:left center;  /* 배경 이미지 위치 */
+      /* background: url('images/book-icon.png') no-repeat left center; */  /* 위와 같은 코드 */
+      padding-left:50px;  /* 왼쪽 패딩 */
+      line-height:40px;  /* 줄간격 */
+    }
+  </style>
+</head>
+<body>
+  <h1>ㅇㅇ출판사</h1>
+  <ul>
+    <li>도서 목록</li>
+    <li>신간 도서</li>
+    <li>고객센터</li>
+    <li>게시판</li>
+  </ul>
+</body>
+</html>

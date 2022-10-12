@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 추첨</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+      color:#fff;
+      background:#000;
+    }
+    button {
+      padding:20px 30px;
+      border:1px solid #222;
+      background:#fff;
+      color:#222;
+    }
+    p {
+      text-align:center;
+      padding:20px 30px;
+      margin-top:20px;
+      font-size:20px;
+    }
+  </style>
+</head>
+<body>
+  <button>추첨~!!</button>
+  <p></p>
+  <script>
+    let bttn = document.querySelector("button");
+    let result = document.querySelector("p");
+
+    // 04 - 웹 폼 퀴즈    
+    let members = ["강현실", "강형주", "권동환", "권민희", "김강은", "김도연", "김지수", "김지해", "김한솔", "김현아", "박수민", "박하영", "박현수", "양예지", "우민아", "이수진", "이우경", "이종화", "이채영", "이판지", "전규미", "전병임", "정낙현", "조영근", "조은수", "최원우", "홍지수", "황록연"] ;
+
+    bttn.addEventListener("click", function() {
+      let magic = Math.floor(Math.random() * members.length);
+      // result.innerText = `${magic}`;
+      result.innerText = `${members[magic]}`;
+    });
+
+  </script>
+</body>
+</html>
