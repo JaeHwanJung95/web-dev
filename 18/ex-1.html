@@ -5,12 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>자바스크립트 이벤트</title>
 	<link rel="stylesheet" href="css/function.css">
+	<script>
+		function myAlert(color) {
+			alert(`${color} 버튼을 클릭했습니다.`);
+		}
+	</script>
 </head>
 <body>
 	<ul>
-		<li><a href="#">Green</a></li>
-		<li><a href="#">Orange</a></li>
-		<li><a href="#">Purple</a></li>
+		<li><a href="#" onclick="myAlert('Green');">Green</a></li>
+		<li><a href="#" onclick="myAlert('Orange');">Orange</a></li>
+		<li><a href="#" onclick="myAlert('Purple');">Purple</a></li>
 	</ul>		
 </body>
 </html>  
