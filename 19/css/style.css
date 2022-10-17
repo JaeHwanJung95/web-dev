@@ -25,3 +25,6 @@ p {
   background-color:#8ddfff;
   font-style: italic;
 }
+.clicked {
+  background-color: yellow;
+}
