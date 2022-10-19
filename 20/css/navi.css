@@ -1,0 +1,43 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Navigation */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Navigation */
+
+
+/* Main Content */
+
+main {
+  width:80%;
+  margin:70px auto;
+}
+
+main h2 {
+  font-size:2em;
+}
+main p {
+  font-size:1.2em;
+  line-height:2;
+  margin-bottom:20px;
+}
