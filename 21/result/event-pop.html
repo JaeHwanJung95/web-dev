@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 공지</title>
+  <style>
+    #container 
+    {
+      width:400px;
+      margin:10px auto;
+      padding:10px;
+      text-align:center;
+    }        
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>이벤트 공지</h1>
+    <img src="images/event.png">
+    <p><a href="#" id="detail">자세히 보기</a></p>  
+  </div>
+
+  <script>
+    let detail = document.getElementById("detail");
+    let url = "https://news.seoul.go.kr/culture/archives/517152";
+    detail.addEventListener("click", () => {
+      window.opener.location = url;  // 오프너의 location에 url을 넘겨줍니다.
+      window.close();  // 현재 창을 닫습니다.
+    });
+  </script>
+</body>
+</html>

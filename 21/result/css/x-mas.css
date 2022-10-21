@@ -1,0 +1,30 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  background: url('../images/christmas.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#container {
+  width:600px;
+  height:300px;
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-size: 4em;
+  line-height: 120px;  
+}
+p {
+  font-size:4.5em;
+  font-weight:bold;
+  line-height: 120px;
+  color: yellow;
+}

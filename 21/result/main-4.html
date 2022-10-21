@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Window 객체</title>
+</head>
+<body>
+    <p>문서를 열면 팝업 창이 표시됩니다</p>
+    <script>
+      let newWindow = window.open("notice.html", "popup", "left=100, top=100, width=500, height=400");
+      if (newWindow === null) {
+        alert("팝업 창이 차단되어 있습니다. 팝업 차단을 해제한 후 새로고침하세요.");
+      }
+      newWindow.resizeBy(100, 100);
+    </script>
+</body>
+</html> 
