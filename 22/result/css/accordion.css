@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {  
+  width: 400px;
+  margin: 20px auto;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.coll-btn {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.coll-btn:hover,
+.active {
+  background-color: #ccc;
+}
+.coll-btn::after {
+  content: "\002b";
+  /* content: "\2b";
+  font: var(--fa-font-solid); */
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+}
+.active::after {
+  content: "\2212";
+  /* content: "\f00d";
+  font: var(--fa-font-solid); */
+}
+
+.panel {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  overflow: hidden;
+  display: none;
+}

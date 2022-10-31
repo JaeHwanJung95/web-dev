@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  position: fixed;  
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  text-shadow: 0.5px 0.5px #000;
+}

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* float 속성 사용 */
+
+/* .pic {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* 플렉스 박스 사용 */
+
+.row {
+  display: flex;
+}
+.pic {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* 미디어 쿼리 사용 */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .pic {
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bar {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bar > input[type=range] {
+  width: 80%;
+  height: 100%;
+  outline: none;
+  background: transparent;
+  border: none;
+}
+
+#output{
+  font-size: 1.4rem;
+  color: blue;
+}

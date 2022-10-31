@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 800px;
+  width: 500px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  width: 100%;
+  font-size: 1.4rem;
+  margin: 10px 0;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+}
+
+ul li {
+  width:100%;
+  font-size: 1.4rem;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+/* ul li:nth-child(even) {
+  background-color: #f1f1f1;
+} */

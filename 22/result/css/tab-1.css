@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+.tabs {
+  width:600px;
+  margin: 20px auto;
+  position: relative;
+}
+.tabs ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+}
+
+.tabs ul li {
+  line-height: 40px;
+  text-align: center;
+  background: #f9f9f9;
+}
+.tabs label {
+  display: block;
+  padding: 5px 20px;
+  width: 100%;
+  cursor: pointer;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.t-content {
+  display: none; 
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  position:absolute;
+  left:0;
+  border: 5px solid #eee;
+}
+
+.tabs input:checked ~ label {
+  background: #ccc;
+}
+.tabs input:checked ~ .t-content {
+  display: block;
+} 

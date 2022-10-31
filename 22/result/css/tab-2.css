@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tabs {
+  width:600px;
+  margin: 20px auto;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+}
+
+.tab-button {
+  background-color: #fff;
+  line-height: 40px;
+  padding: 5px 20px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid transparent;
+}
+.tab-button.active {
+  color: #0084ff;  
+  border-bottom: 2px solid #0084ff;
+}
+.t-content {
+  display: none;
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.t-content.current {
+  display: block;
+}
+
