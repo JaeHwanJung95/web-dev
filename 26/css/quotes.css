@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #295500;
+  overflow: hidden;
+}
+
+#result {
+  color: #fffafa;
+  padding: 20px;
+}
